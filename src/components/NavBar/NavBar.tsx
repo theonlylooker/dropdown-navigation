@@ -1,22 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../../assets/images/logo.svg";
+import menu from "../../assets/images/icon-menu.svg";
+import Modal from "../Modal/Modal";
+import NavBarList from "../NavBarList/NavBarList";
+import { useModal } from "../../hooks/useModal";
 
-const navBar = () => {
+const NavBar = () => {
+  const [modalState, handleOpen, handleClose] = useModal();
   return (
-    <div>
+    <div className="navbar">
       <img src={logo} alt="logo" />
-      <ul>
-        <li>Features</li>
-        <li>Company</li>
-        <li>Careers</li>
-        <li>About</li>
-      </ul>
-      <ul>
-        <li>Login</li>
-        <li>Register</li>
-      </ul>
+      <div className="navbar__desktop">
+        <NavBarList />
+      </div>
+      <button className="navbar__menu" onClick={handleOpen}>
+        <img src={menu} alt="" />
+      </button>
+      <Modal modalState={modalState} handleClose={handleClose}>
+        <NavBarList />
+      </Modal>
     </div>
   );
 };
 
-export default navBar;
+export default NavBar;

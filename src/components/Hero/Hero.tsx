@@ -5,6 +5,7 @@ import audiophile from "../../assets/images/client-audiophile.svg";
 import databiz from "../../assets/images/client-databiz.svg";
 import maker from "../../assets/images/client-maker.svg";
 import meet from "../../assets/images/client-meet.svg";
+import { StyledButton } from "../Button/Button.style";
 
 const Hero = () => {
   return (
@@ -12,22 +13,18 @@ const Hero = () => {
       <div className="hero__text">
         <h1 className="hero__title">Make remote work</h1>
         <p className="hero__paragraph">
-          Get your team in sync, no matter your location. <br />
-          Streamline processes, create team rituals, and watch productivity
-          soar.
+          Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
         </p>
-        <button>sere un styled component</button>
+        <StyledButton type="hero"> Learn More </StyledButton>
         <div className="hero__clients">
-          <img src={audiophile} alt="audiophile" />
-          <img src={databiz} alt="databiz" />
-          <img src={maker} alt="maker" />
-          <img src={meet} alt="meet" />
+          <img className="hero__client1" src={databiz} alt="databiz" />
+          <img className="hero__client2" src={audiophile} alt="audiophile" />
+          <img className="hero__client3" src={meet} alt="meet" />
+          <img className="hero__client4" src={maker} alt="maker" />
         </div>
       </div>
-      <picture className="hero__image">
-        <source srcSet={heroImageD} media="(min-width: 1800px)" />
-        <img src={heroImageM} alt="man writing in a laptop" />
-      </picture>
+      <img className="hero__img" src={heroImageM} alt="" />
     </div>
   );
 };
