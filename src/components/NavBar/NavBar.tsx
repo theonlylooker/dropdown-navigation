@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import logo from "../../assets/images/logo.svg";
 import menu from "../../assets/images/icon-menu.svg";
 import Modal from "../Modal/Modal";
@@ -9,7 +9,7 @@ const NavBar = () => {
   const [modalState, handleOpen, handleClose] = useModal();
   return (
     <div className="navbar">
-      <img src={logo} alt="logo" />
+      <img className="navbar__logo" src={logo} alt="logo" />
       <div className="navbar__desktop">
         <NavBarList />
       </div>

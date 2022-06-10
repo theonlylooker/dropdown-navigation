@@ -28,6 +28,12 @@ html{
 .navBarlist__item{
   margin-bottom: 1.5rem;
 }
+
+.navBarlist__link{
+  color: hsl(0, 0%, 41%);
+  text-decoration: none;
+}
+
 .navbar__menu{
   border: 0;
   background-color: hsl(0, 0%, 98%);
@@ -95,6 +101,8 @@ html{
 }
 .hero__img{
   width: 100%;
+  max-width: 35rem;
+  margin: 0 auto;
 }
 .hero__clients{
   margin-top: 2rem;
@@ -107,13 +115,102 @@ html{
 }
 .hero__client1{
   width: 20%;
+  max-width: 6rem;
 }
 .hero__client2{
   width: 13%;
+  max-width: 6rem;
 }
 .hero__client3{
   width: 17%;
+  max-width: 6rem;
 }
 .hero__client4{
   width: 16%;
+  max-width: 6rem;
+}
+
+@media(min-width:1440px){
+  .modal.open{
+    display: none;
+  }
+  .navbar{
+    display: flex;
+    align-items: flex-end;
+  }
+  .navbar__logo{
+    margin-right: 1rem;
+  }
+  .navbar__desktop{
+    display: flex;
+    flex-grow: 1;
+  }
+  .navBarlist{
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 0.9rem;
+  }
+  .navBarlist__item{
+    display: inline;
+    margin-right: 2rem;
+  }
+  .navbar__menu{
+    display: none;
+  }
+
+  .navBarlist__link:active{
+    color: black;
+  }
+  .navBarlist__link:hover{
+    color: black;
+  }
+
+  .hero{
+    display: flex;
+    flex-direction: row;
+    max-height: 550px;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  .hero__text{
+    order: 0;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .hero__title{
+    font-size: 5rem;
+    width: 70%;
+  }
+  .hero__paragraph{
+    width: 60%;
+    margin-bottom: 3rem;
+  }
+  .hero__img{
+    width: 40%;
+    content: url("/src/assets/images/image-hero-desktop.png");
+  }
+  .hero__clients{
+    justify-content: flex-start;
+    gap: 2rem;
+    padding: 0;
+  }
+  .hero__client1{
+    width: 13%;
+  }
+  .hero__client2{
+    width: 8%;
+  }
+  .hero__client3{
+    width: 10%;
+  }
+  .hero__client4{
+    width: 9%;
+  }
+  .full ul{
+    left: 5rem;
+  }
 }

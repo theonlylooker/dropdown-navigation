@@ -19,17 +19,17 @@ const NavBarList = () => {
   const companyElements: string[] = ["History", "Our Team", "Blog"];
   const arrows: string[] = [down, up];
   return (
-    <div className="navBarlist">
+    <nav className="navBarlist">
       <ul className="navBarlist__list">
-        <li className="navBarlist__item">
+        <li className="navBarlist__item full">
           <DropDownStyled
-            name="Feauters"
+            name="Features"
             arrows={arrows}
             list={featuresElements}
             icons={featuresElementsIcons}
           />
         </li>
-        <li className="navBarlist__item">
+        <li className="navBarlist__item ">
           <DropDownStyled
             name="Company"
             arrows={arrows}
@@ -37,16 +37,28 @@ const NavBarList = () => {
           />
         </li>
 
-        <li className="navBarlist__item">Careers</li>
-        <li className="navBarlist__item">About</li>
+        <li className="navBarlist__item">
+          <a className="navBarlist__link" href="#">
+            Carrers
+          </a>
+        </li>
+        <li className="navBarlist__item">
+          <a className="navBarlist__link" href="#">
+            About
+          </a>
+        </li>
       </ul>
       <ul className="navBarlist__action">
-        <li className="navBarlist__item">Login</li>
+        <li className="navBarlist__item">
+          <a className="navBarlist__link" href="#">
+            Login
+          </a>
+        </li>
         <li className="navBarlist__item">
           <StyledButton type="secondary"> Register </StyledButton>
         </li>
       </ul>
-    </div>
+    </nav>
   );
 };
 

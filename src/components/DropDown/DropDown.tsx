@@ -4,17 +4,26 @@ const DropDown = ({ name, arrows, className, icons, list }: dropDownProps) => {
   const [visibility, setVisibility] = useState(false);
   return (
     <div className={className}>
-      <div className="dropdown__title">
-        <a
-          onClick={() => {
-            setVisibility(!visibility);
-          }}
-        >
-          {name}
-        </a>
+      <button
+        className="dropdown__title"
+        onClick={() => {
+          setVisibility(!visibility);
+        }}
+        onFocus={() => {
+          setVisibility(true);
+        }}
+        onBlur={() => {
+          setVisibility(false);
+        }}
+      >
+        <p className="dropdown__text">{name}</p>
 
-        {visibility ? <img src={arrows[1]}></img> : <img src={arrows[0]}></img>}
-      </div>
+        {visibility ? (
+          <img src={arrows[1]}></img>
+        ) : (
+          <img className="arrow" src={arrows[0]}></img>
+        )}
+      </button>
       {visibility && (
         <ul>
           {icons

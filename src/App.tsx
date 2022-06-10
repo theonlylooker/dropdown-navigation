@@ -5,8 +5,8 @@ import { Wrapper } from "./components/Wrapper/Wrapper";
 function App() {
   return (
     <div className="App">
+      <NavBar></NavBar>
       <Wrapper>
-        <NavBar></NavBar>
         <Hero></Hero>
       </Wrapper>
     </div>
