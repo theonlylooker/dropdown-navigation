@@ -34,5 +34,8 @@ export const StyledButton = styled.a<buttonStyledProps>`
   @media (min-width: 1440px) {
     padding: ${(props) =>
       props.type === "hero" ? "0.8rem 1.1rem" : "0.5rem 1rem"};
+    &:hover {
+      cursor: pointer;
+    }
   }
 `;

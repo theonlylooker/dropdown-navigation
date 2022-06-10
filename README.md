@@ -1,46 +1,84 @@
-# Getting Started with Create React App
+# Frontend Mentor - Intro section with dropdown navigation solution
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a solution to the [Intro section with dropdown navigation challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/intro-section-with-dropdown-navigation-ryaPetHE5). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Available Scripts
+## Table of contents
 
-In the project directory, you can run:
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-### `npm start`
+## Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### The challenge
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Users should be able to:
 
-### `npm test`
+- View the relevant dropdown menus on desktop and mobile when interacting with the navigation links
+- View the optimal layout for the content depending on their device's screen size
+- See hover states for all interactive elements on the page
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Screenshot
 
-### `npm run build`
+![](./screenshots/desktop-version.png.jpg)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![](./screenshots/mobile-version.png.jpg)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Links
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Solution URL: [github](https://github.com/theonlylooker/dropdown-navigation)
+- Live Site URL: [netlify](https://moonlit-panda-ff1f33.netlify.app/)
 
-### `npm run eject`
+## My process
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Built with
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Semantic HTML5 markup
+- CSS
+- Flexbox
+- Mobile-first workflow
+- [React](https://reactjs.org/) - JS library
+- [Styled Components](https://styled-components.com/) - For styles
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### What i learned
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+In this proyect i was mayorly focused in css, the list of things i learned was.
 
-## Learn More
+- Modals
+- Styled Components
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+#### Modals
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+I have seen modals, but i never tried working on one myself, so it was a first time, i am sure there are a lot to be improved with it.
+
+#### Styled Components
+
+I knew about the Styled Components and how this makes components have css embedded inside. Makes easy to model a simple UI component instead of have more css inside index.css, and you can focus on style the component, making it more reusable
+
+### Continued development
+
+- I want to focus more on styled components, i didn't use it here but the creating a personalized theme as i read can make things more easy,
+- I did use css flex, but i was having dificulties trying to move certaing objects to be perfect, so i want to get more comfortable with css flex as well as learning more about css grid
+- Another things i want to reinforce is about positioning on css
+
+### Useful resources
+
+- [Example resource 1](https://medium.com/building-crowdriff/styled-components-to-use-or-not-to-use-a6bb4a7ffc21) - Here i found a discussion about the use of styled components.
+- [Example resource 2](https://dev.to/elijahtrillionz/complete-guide-on-how-to-use-styled-components-in-react-360c) - This is an amazing article which helped me understand styled components. I'd recommend it to anyone still learning this concept.
+
+## Author
+
+- Website - [Eduardo Rolando Basurco Cayllahua](https://www.your-site.com)
+- Frontend Mentor - [@theonlylooker](https://www.frontendmentor.io/profile/theonlylooker)
+
+## Acknowledgments
+
+I got some help from my friend alrus2797 about some specifics about positioning .

@@ -39,6 +39,7 @@ export const DropDownStyled = styled(DropDown)`
       .dropdown__text {
         color: black;
       }
+      cursor: pointer;
     }
     */ .arrow {
       filter: invert();
