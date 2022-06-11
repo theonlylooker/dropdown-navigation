@@ -71,8 +71,8 @@ I knew about the Styled Components and how this makes components have css embedd
 
 ### Useful resources
 
-- [Example resource 1](https://medium.com/building-crowdriff/styled-components-to-use-or-not-to-use-a6bb4a7ffc21) - Here i found a discussion about the use of styled components.
-- [Example resource 2](https://dev.to/elijahtrillionz/complete-guide-on-how-to-use-styled-components-in-react-360c) - This is an amazing article which helped me understand styled components. I'd recommend it to anyone still learning this concept.
+- [resource 1](https://medium.com/building-crowdriff/styled-components-to-use-or-not-to-use-a6bb4a7ffc21) - Here i found a discussion about the use of styled components.
+- [resource 2](https://dev.to/elijahtrillionz/complete-guide-on-how-to-use-styled-components-in-react-360c) - This is an amazing article which helped me understand styled components. I'd recommend it to anyone still learning this concept.
 
 ## Author
 
